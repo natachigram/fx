@@ -1,5 +1,9 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
+import Image from 'next/image';
+import avatar from '../public/assets/Ellipse49.png';
+import avatar2 from '../public/assets/Ellipse48.png';
+import avatar3 from '../public/assets/Ellipse.png';
 
 export default function Home() {
   return (
@@ -202,23 +206,175 @@ export default function Home() {
 
       {/* why forex section */}
 
-      <section className={styles.purchase}>
-        <div className={styles.purchase__headerText}>
-          <p>Purchase bitcoin</p>
-          <h3>Quick Link to Purchase Bitcoin</h3>
-          <p>
+      <section className={styles.why}>
+        <div className={styles.why__headerText}>
+          <p>WHY FXOPTIONSGENIX</p>
+          <h3>Competitive Benefit</h3>
+          <p className={styles.why__description}>
             Competitive advantages are conditions that allow a company or
             country to produce a good or service at equal value but at a lower
             price or in a more desirable fashion
           </p>
         </div>
-        <div className={styles.purchase__quickLinks}>
+        <div className={styles.why__quickLinks}>
           <div className={styles.box}></div>
           <div className={styles.box}></div>
           <div className={styles.box}></div>
           <div className={styles.box}></div>
           <div className={styles.box}></div>
           <div className={styles.box}></div>
+        </div>
+      </section>
+
+      {/* our investment */}
+
+      <section className={styles.plan}>
+        <h3>Our Investment Plan</h3>
+        <div className={styles.planCardContainer}>
+          <div className={styles.planCard}>
+            <h4>Basic</h4>
+            <hr />
+            <p>$1,000 - $4,999</p>
+            <p>DURATION -- 14 DAYS</p>
+            <p>ROI -- 85%</p>
+          </div>
+          <div className={styles.planCard}>
+            <h4>STANDARD</h4>
+            <hr />
+            <p>$5,000 - $19,999</p>
+            <p>DURATION -- 10 DAYS</p>
+            <p>ROI -- 100%</p>
+          </div>
+          <div className={styles.planCard}>
+            <h4>CLASSIC</h4>
+            <hr />
+            <p>$20,000 +</p>
+            <p>DURATION -- 14 DAYS</p>
+            <p>ROI -- 130%</p>
+          </div>
+        </div>
+      </section>
+
+      {/* testimnial section */}
+
+      <section className={styles.testimony}>
+        <h4>REVIEWS</h4>
+        <h3>TESTIMONIALS</h3>
+        <p>Below are the testimonies from some of our customers</p>
+        <div className={styles.testimonyCardContainer}>
+          <div className={styles.testimonyCard}>
+            <div className={styles.content}>
+              <div className={styles.avatar}>
+                <Image src={avatar2} />
+              </div>
+
+              <p>
+                I have never seen a platform that pays good like FXOPTIONSGENIX.
+                This is amazing, I thank every Moderator here for helping me
+                most especially to my account manager
+              </p>
+
+              <p className={styles.location}>
+                Leonidas Armando, <span>Philippine</span>
+              </p>
+            </div>
+          </div>
+          <div className={styles.testimonyCard}>
+            <div className={styles.content}>
+              <div className={styles.avatar}>
+                <Image src={avatar} />
+              </div>
+
+              <p>
+                I am so happy, I give gratitude to the entire staff of
+                FXOPTIONSGENIX for I just made a withdrawal of $30000. Thank you
+                once again FXOPTIONSGENIX most especially to my account manager.
+              </p>
+
+              <p className={styles.location}>
+                Mpho Siyabonga, <span>South Africa</span>
+              </p>
+            </div>
+          </div>
+          <div className={styles.testimonyCard}>
+            <div className={styles.content}>
+              <div className={styles.avatar}>
+                <Image src={avatar3} />
+              </div>
+
+              <p>
+                Everytime I contact FXOPTIONSGENIX I always feel confident as
+                all my issues are handled by people who are there to assist and
+                accommodate their customers. Never have I ever felt unsatisfied
+                with their professional personnel keep up the good work
+                FXOPTIONSGENIX
+              </p>
+
+              <p className={styles.location}>
+                Lukasz Milik, <span>Poland</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* faq section */}
+
+      <section className={styles.faq}>
+        <h4>FAQS</h4>
+        <h3>Frequently Asked Questions</h3>
+        <p>
+          Frequently asked questions (FAQ) or Questions and Answers (Q&A), are
+          listed questions and answers, all supposed to be commonly asked in
+          some context
+        </p>
+
+        <div className={styles.faq__cardContainer}>
+          <div className={styles.faq__card}>
+            <div className={styles.card__leftSide}>
+              <span>Q</span>
+              <p>What is .....</p>
+            </div>
+            <div className={styles.iconRight}>+</div>
+          </div>
+          <div className={styles.faq__card}>
+            <div className={styles.card__leftSide}>
+              <span>Q</span>
+              <p>Who is eligible to invest ?</p>
+            </div>
+            <div className={styles.iconRight}>+</div>
+          </div>
+          <div className={styles.faq__card}>
+            <div className={styles.card__leftSide}>
+              <span>Q</span>
+              <p>Where can i deposite ?</p>
+            </div>
+            <div className={styles.iconRight}>+</div>
+          </div>
+          <div className={styles.faq__card}>
+            <div className={styles.card__leftSide}>
+              <span>Q</span>
+              <p>What process can i use to fund my account ?</p>
+            </div>
+            <div className={styles.iconRight}>+</div>
+          </div>
+        </div>
+      </section>
+
+      <section className={styles.contact}>
+        <div>
+          <p>Contact Us</p>
+          <h3>Get In Touch</h3>
+        </div>
+
+        <div>
+          <p>ADDRESS</p>
+          <p>Brockville, ON K6V 6S5 Canada</p>
+        </div>
+
+        <div>
+          <p>EMAIL</p>
+          <p>Support@FXOPTIONSGENIX.com</p>
         </div>
       </section>
     </div>
